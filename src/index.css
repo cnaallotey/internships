@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-brand-pink: #be185d;
+  --color-brand-gold: #C9A84C;
+  --color-near-black: #0A0A0A;
+  --color-surface-gray: #F5F5F3;
+  --color-soft-pink: #fdf2f8;
+  --color-border-beige: #E0E0DB;
+
+  --radius-xl: 12px;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-near-black bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@utility gold-divider {
+  @apply h-[1px] w-full bg-border-beige;
+}
+
+@utility luxury-card {
+  @apply bg-white rounded-lg border border-border-beige transition-all duration-300;
+}
+
+@utility cta-button-base {
+  @apply px-8 py-4 rounded-full font-medium transition-colors duration-300 flex items-center justify-center gap-2;
+}
+
+@utility cta-filled {
+  @apply cta-button-base bg-pink-700 text-white hover:bg-pink-800;
+}
+
+@utility cta-ghost {
+  @apply cta-button-base border border-near-black text-near-black hover:bg-near-black/5;
+}
