@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { DollarSign, Plane, Building2, TrendingUp } from 'lucide-react';
 import LuxuryButton from '../ui/LuxuryButton';
 
@@ -104,7 +105,9 @@ export default function StageThreeSection() {
               <p className="text-base md:text-lg text-white/60 leading-relaxed mb-10 max-w-xl">
                 Stage 3 isn't just an internship; it's a career launchpad. We partner with companies that are looking for long-term talent, meaning your performance can lead directly to a full-time role.
               </p>
-              <LuxuryButton>Join Waitlist</LuxuryButton>
+              <Link to="/waitlist" className="inline-block">
+                <LuxuryButton>Join Waitlist</LuxuryButton>
+              </Link>
             </div>
             <div className="lg:col-span-5 relative min-h-[280px] lg:min-h-0 border-t lg:border-t-0 lg:border-l border-white/10">
               <img

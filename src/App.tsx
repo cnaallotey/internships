@@ -10,6 +10,7 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import FAQ from './pages/FAQ';
+import Waitlist from './pages/Waitlist';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/waitlist" element={<Waitlist />} />
             {/* Fallback routing */}
             <Route path="*" element={<Home />} />
           </Routes>

@@ -88,9 +88,9 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          <Link to="/apply">
+          <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
             <LuxuryButton className="px-6 py-2 text-sm">Apply Now</LuxuryButton>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -139,9 +139,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link to="/apply" onClick={() => setIsOpen(false)} className="mt-4">
+          <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="mt-4 block">
             <LuxuryButton className="w-full">Apply Now</LuxuryButton>
-          </Link>
+          </a>
         </div>
       </motion.div>
     </nav>

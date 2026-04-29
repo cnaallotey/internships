@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Briefcase, Smartphone, Target, Trophy, Search, Users, LayoutDashboard, CheckCircle2 } from 'lucide-react';
 import LuxuryButton from '../ui/LuxuryButton';
 
@@ -32,7 +33,9 @@ export default function StageOneSection() {
             <p className="text-base md:text-xl text-near-black/60 mb-10 leading-relaxed max-w-xl">
               Build your portfolio, get mentored, and become job-ready through our intensive 2-month program.
             </p>
-            <LuxuryButton>Apply Now</LuxuryButton>
+            <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
+              <LuxuryButton>Apply Now</LuxuryButton>
+            </a>
           </motion.div>
 
           <motion.div
@@ -179,7 +182,9 @@ export default function StageOneSection() {
                   </li>
                 ))}
               </ul>
-              <LuxuryButton className="w-full">Apply Now</LuxuryButton>
+              <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer" className="block w-full">
+                <LuxuryButton className="w-full">Apply Now</LuxuryButton>
+              </a>
             </motion.div>
 
             <motion.div {...fadeIn} className="bg-near-black text-white p-8 md:p-12 border border-near-black relative overflow-hidden flex flex-col">
@@ -198,7 +203,9 @@ export default function StageOneSection() {
                   </li>
                 ))}
               </ul>
-              <LuxuryButton variant="ghost" className="w-full text-white border-white/30 hover:bg-white/10">Join Waitlist</LuxuryButton>
+              <Link to="/waitlist" className="block w-full">
+                <LuxuryButton variant="ghost" className="w-full text-white border-white/30 hover:bg-white/10">Join Waitlist</LuxuryButton>
+              </Link>
             </motion.div>
           </div>
         </div>

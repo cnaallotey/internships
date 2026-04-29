@@ -67,7 +67,9 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <LuxuryButton>Join Live Q&A</LuxuryButton>
-            <LuxuryButton variant="ghost">Apply Now</LuxuryButton>
+            <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
+              <LuxuryButton variant="ghost">Apply Now</LuxuryButton>
+            </a>
           </div>
         </div>
       </section>

@@ -293,7 +293,9 @@ export default function Home() {
                 Join thousands of African professionals who have accelerated their careers through our system.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <LuxuryButton>Apply Now</LuxuryButton>
+                <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
+                  <LuxuryButton>Apply Now</LuxuryButton>
+                </a>
                 <LuxuryButton variant="ghost" className="text-white border-white/30 hover:bg-white/10">Join Live Q&A</LuxuryButton>
               </div>
             </div>
