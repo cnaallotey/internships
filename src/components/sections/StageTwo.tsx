@@ -22,7 +22,7 @@ export default function StageTwoSection() {
           >
             <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden border border-border-beige">
               <img
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000"
+                src="https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&q=80&w=1000"
                 className="w-full h-full object-cover"
                 alt="Global Team"
               />

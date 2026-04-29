@@ -128,7 +128,7 @@ export default function Home() {
                 icon: <Code size={20} />,
                 desc: 'Skill-based internships + 30-Day Remote Job Support + LinkedIn Optimization Support',
                 link: '#stage-1',
-                image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=900'
+                image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=900'
               },
               {
                 num: '02',
@@ -136,7 +136,7 @@ export default function Home() {
                 icon: <Globe size={20} />,
                 desc: 'Work with international companies across multiple industries in a 2–3 month remote internship.',
                 link: '#stage-2',
-                image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=900'
+                image: 'https://images.unsplash.com/photo-1739285452644-3a2c009112fe?auto=format&fit=crop&q=80&w=900'
               },
               {
                 num: '03',
@@ -144,7 +144,7 @@ export default function Home() {
                 icon: <DollarSign size={20} />,
                 desc: 'Paid internships — Remote & In-Person for 6 months to 1 year with salary, visa support & housing.',
                 link: '#stage-3',
-                image: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=900'
+                image: 'https://images.unsplash.com/photo-1618085222100-93f0eecad0aa?auto=format&fit=crop&q=80&w=900'
               }
             ].map((stage, idx) => (
               <motion.a
@@ -197,10 +197,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
-              { title: 'Students', desc: 'Gain experience while still in school', image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Graduates', desc: 'Bridge the gap between degree and career', image: 'https://images.unsplash.com/photo-1523240553697-c4d527d09f93?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Career Switchers', desc: 'Pivot into a new field with proof of skills', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Professionals', desc: 'Expand your portfolio and go global', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800' }
+              { title: 'Students', desc: 'Gain experience while still in school', image: 'https://images.unsplash.com/photo-1690808612076-baa7f31baab0?auto=format&fit=crop&q=80&w=800' },
+              { title: 'Graduates', desc: 'Bridge the gap between degree and career', image: 'https://images.unsplash.com/photo-1594750852563-5ed8e0421d40?auto=format&fit=crop&q=80&w=800' },
+              { title: 'Career Switchers', desc: 'Pivot into a new field with proof of skills', image: 'https://images.unsplash.com/photo-1563132337-f159f484226c?auto=format&fit=crop&q=80&w=800' },
+              { title: 'Professionals', desc: 'Expand your portfolio and go global', image: 'https://images.unsplash.com/photo-1614023342667-6f060e9d1e04?auto=format&fit=crop&q=80&w=800' }
             ].map((card, idx) => (
               <motion.div
                 key={idx}
@@ -252,7 +252,7 @@ export default function Home() {
             <motion.div {...fadeIn} className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative aspect-[4/5] overflow-hidden border border-border-beige">
                 <img
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=900"
+                  src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?auto=format&fit=crop&q=80&w=900"
                   alt="Mission"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Home() {
             </div>
             <div className="lg:col-span-2 relative min-h-[260px] lg:min-h-0 border-t lg:border-t-0 lg:border-l border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1000"
+                src="https://images.unsplash.com/photo-1573164713712-03790a178651?auto=format&fit=crop&q=80&w=1000"
                 alt="Team collaboration"
                 className="absolute inset-0 w-full h-full object-cover opacity-70"
               />

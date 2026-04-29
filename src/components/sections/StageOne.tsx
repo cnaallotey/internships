@@ -43,7 +43,7 @@ export default function StageOneSection() {
           >
             <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden border border-border-beige">
               <img
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000"
+                src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?auto=format&fit=crop&q=80&w=1000"
                 className="w-full h-full object-cover"
                 alt="Mentorship"
               />
@@ -132,7 +132,7 @@ export default function StageOneSection() {
             <motion.div {...fadeIn} className="lg:col-span-5">
               <div className="relative aspect-[4/3] overflow-hidden border border-border-beige">
                 <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000"
+                  src="https://images.unsplash.com/photo-1573164574472-797cdf4a583a?auto=format&fit=crop&q=80&w=1000"
                   alt="Career paths"
                   className="w-full h-full object-cover"
                 />

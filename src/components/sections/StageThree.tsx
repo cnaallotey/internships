@@ -45,7 +45,7 @@ export default function StageThreeSection() {
           >
             <div className="relative aspect-[4/5] overflow-hidden border border-border-beige">
               <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000"
+                src="https://images.unsplash.com/photo-1606596556957-f6566cc865a9?auto=format&fit=crop&q=80&w=1000"
                 alt="Global professionals"
                 className="w-full h-full object-cover"
               />
@@ -108,7 +108,7 @@ export default function StageThreeSection() {
             </div>
             <div className="lg:col-span-5 relative min-h-[280px] lg:min-h-0 border-t lg:border-t-0 lg:border-l border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&q=80&w=1000"
+                src="https://images.unsplash.com/photo-1691796792324-f156620f795c?auto=format&fit=crop&q=80&w=1000"
                 className="absolute inset-0 w-full h-full object-cover opacity-80"
                 alt="Professional success"
               />

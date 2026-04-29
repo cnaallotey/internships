@@ -41,7 +41,7 @@ export default function About() {
             >
               <div className="relative aspect-[4/5] overflow-hidden border border-border-beige">
                 <img
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000"
+                  src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1000"
                   alt="Our team"
                   className="w-full h-full object-cover"
                 />
@@ -76,7 +76,7 @@ export default function About() {
             <motion.div {...fadeIn} className="lg:col-span-5">
               <div className="relative aspect-square overflow-hidden border border-border-beige">
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
+                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=1000"
                   alt="Collaborative team"
                   className="w-full h-full object-cover"
                 />
@@ -130,10 +130,10 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-border-beige">
             {[
-              { label: 'Learning', image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=900' },
-              { label: 'Experience', image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=900' },
-              { label: 'Global Exposure', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=900' },
-              { label: 'Paid Opportunities', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=900' }
+              { label: 'Learning', image: 'https://images.unsplash.com/photo-1562217243-1340a2a73e2f?auto=format&fit=crop&q=80&w=900' },
+              { label: 'Experience', image: 'https://images.unsplash.com/photo-1573164574472-797cdf4a583a?auto=format&fit=crop&q=80&w=900' },
+              { label: 'Global Exposure', image: 'https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&q=80&w=900' },
+              { label: 'Paid Opportunities', image: 'https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&q=80&w=900' }
             ].map((step, idx) => (
               <motion.div
                 key={idx}
