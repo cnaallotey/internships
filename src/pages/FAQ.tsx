@@ -65,7 +65,7 @@ export default function FAQ() {
           <p className="text-lg text-near-black/60 mb-12 max-w-2xl mx-auto">
             Our team is ready to help you navigate your career journey. Join our next live session or start your application today.
           </p>
-          <div className="flex flex-col sm:row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <LuxuryButton>Join Live Q&A</LuxuryButton>
             <LuxuryButton variant="ghost">Apply Now</LuxuryButton>
           </div>

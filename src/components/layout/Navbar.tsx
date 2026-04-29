@@ -37,9 +37,9 @@ export default function Navbar() {
           : 'py-6 bg-transparent'
         }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <img src="https://internships.thriveafrica.co/images/logo.svg" className='h-12' alt="Thrive Internships" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+        <Link to="/" className="flex items-center gap-2 group shrink-0">
+          <img src="https://internships.thriveafrica.co/images/logo.svg" className='h-9 sm:h-10 md:h-12' alt="Thrive Internships" />
         </Link>
 
         {/* Desktop Nav */}
@@ -95,7 +95,9 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-near-black"
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
+          className="md:hidden text-near-black p-2 -mr-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}

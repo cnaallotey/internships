@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Thrive Internships - Career Acceleration Platform
 
-# Run and deploy your AI Studio app
+From beginner to globally paid roles — Thrive Internships helps you build real-world experience, gain international exposure, and earn from your skills through a structured 3-Stage Internship System.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/c30a1dac-b8a5-4844-a9ca-116b45a7df70
+The platform guides candidates through three core stages:
+- **Stage 1: Build Experience:** Skill-based internships with remote job support, mentorship, and real-world projects.
+- **Stage 2: Go Global:** 2–3 month remote internships working with international companies across multiple industries.
+- **Stage 3: Earn Globally:** Paid remote or in-person roles for 6 months to 1 year, with visa and housing assistance.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
+- Node.js
+- Yarn
 
+### Installation & Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Install dependencies:**
+   ```bash
+   yarn install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   yarn dev
+   ```
+
+3. **Build for production:**
+   ```bash
+   yarn build
+   ```
+
+## Technologies Used
+- React
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Motion (Framer Motion)
