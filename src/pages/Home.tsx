@@ -92,7 +92,7 @@ export default function Home() {
                 ))}
               </div>
               <div>
-                <div className="text-sm font-bold">70k+ Students Helped</div>
+                <div className="text-sm font-bold">70k+ Students Trained</div>
                 <div className="text-[10px] text-near-black/40 uppercase tracking-wider">Join the community</div>
               </div>
             </motion.div>
