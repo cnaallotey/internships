@@ -12,9 +12,12 @@ const fadeIn = {
 
 export default function StageOneSection() {
   const careerPaths = [
-    'Data Science', 'Machine Learning', 'AI Engineering', 'Data Engineering',
-    'Digital Marketing', 'Cybersecurity', 'Product Management', 'UI/UX Design',
-    'Cloud Computing', 'Software Development'
+    'Data Science', 'Data Analytics', 'Machine Learning', 'AI Engineering',
+    'Generative AI', 'Data Engineering', 'Software Development',
+    'Website Development with Wordpress & SEO', 'UI/UX Design', 'Graphic Design',
+    'Cloud Computing', 'Cybersecurity',
+    'Digital Marketing', 'Digital Advertising & Campaign Planning',
+    'Social Media Marketing & Advertising'
   ];
 
   return (
@@ -154,6 +157,12 @@ export default function StageOneSection() {
                     {path}
                   </span>
                 ))}
+                <span
+                  className="px-4 py-2 md:px-5 md:py-2.5 border border-dashed border-near-black/40 bg-surface-gray/60 text-near-black font-mono text-[10px] md:text-xs uppercase tracking-widest cursor-default"
+                  title="And more career paths"
+                >
+                  + Many More
+                </span>
               </div>
             </div>
           </div>

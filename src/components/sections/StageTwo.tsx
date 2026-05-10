@@ -91,7 +91,7 @@ export default function StageTwoSection() {
               <h3 className="text-3xl md:text-4xl font-bold leading-tight">Internships Across Every Sector</h3>
             </div>
             <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-near-black/40 hidden md:block">
-              {industries.length} Sectors
+              15+ Sectors
             </div>
           </div>
 
@@ -106,6 +106,10 @@ export default function StageTwoSection() {
                 <span className="font-mono text-[9px] tracking-[0.15em] opacity-40">{String(i + 1).padStart(2, '0')}</span>
               </motion.div>
             ))}
+            <div className="p-5 md:p-6 border-b border-r border-dashed border-near-black/30 bg-surface-gray/60 text-xs md:text-sm font-medium flex items-center justify-between gap-2 text-near-black/70">
+              <span>And many more</span>
+              <span className="font-mono text-[10px] tracking-[0.15em] opacity-60">+++</span>
+            </div>
           </div>
         </div>
 
