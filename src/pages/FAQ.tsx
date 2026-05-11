@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import FaqAccordion from '../components/ui/FaqAccordion';
 import LuxuryButton from '../components/ui/LuxuryButton';
 
@@ -66,7 +67,9 @@ export default function FAQ() {
             Our team is ready to help you navigate your career journey. Join our next live session or start your application today.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <LuxuryButton>Join Live Q&A</LuxuryButton>
+            <Link to="/register">
+              <LuxuryButton>Reserve My Spot</LuxuryButton>
+            </Link>
             <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
               <LuxuryButton variant="ghost">Apply Now</LuxuryButton>
             </a>

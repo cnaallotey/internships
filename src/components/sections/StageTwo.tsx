@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Clock, Briefcase } from 'lucide-react';
 import LuxuryButton from '../ui/LuxuryButton';
 
@@ -50,7 +51,9 @@ export default function StageTwoSection() {
             <p className="text-base md:text-xl text-near-black/60 mb-10 leading-relaxed max-w-xl">
               2–3 month remote internship across global industries. Take your skills outside African borders and build a worldwide network.
             </p>
-            <LuxuryButton>Join Live Q&A</LuxuryButton>
+            <Link to="/register" className="inline-block">
+              <LuxuryButton>Reserve My Spot</LuxuryButton>
+            </Link>
           </motion.div>
         </div>
 
@@ -130,7 +133,9 @@ export default function StageTwoSection() {
               <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl">Connect with us in our next Live Q&A session to get all your questions answered about global placements.</p>
             </div>
             <div className="lg:col-span-4 lg:text-right">
-              <LuxuryButton className="text-white">Join Live Q&A</LuxuryButton>
+              <Link to="/register" className="inline-block">
+                <LuxuryButton className="text-white">Reserve My Spot</LuxuryButton>
+              </Link>
             </div>
           </div>
         </div>

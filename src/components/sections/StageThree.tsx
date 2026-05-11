@@ -33,7 +33,9 @@ export default function StageThreeSection() {
               6 months to 1 year. Remote or In-Person. Part-Time or Full-Time. This is where your skills truly transform into global income.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <LuxuryButton>Join Live Q&A</LuxuryButton>
+              <Link to="/register" className="inline-block">
+                <LuxuryButton>Reserve My Spot</LuxuryButton>
+              </Link>
               <LuxuryButton variant="ghost">Learn About Visa Support</LuxuryButton>
             </div>
           </motion.div>
@@ -105,8 +107,8 @@ export default function StageThreeSection() {
               <p className="text-base md:text-lg text-white/60 leading-relaxed mb-10 max-w-xl">
                 Stage 3 isn't just an internship; it's a career launchpad. We partner with companies that are looking for long-term talent, meaning your performance can lead directly to a full-time role.
               </p>
-              <Link to="/waitlist" className="inline-block">
-                <LuxuryButton>Join Waitlist</LuxuryButton>
+              <Link to="/register" className="inline-block">
+                <LuxuryButton>Apply Now</LuxuryButton>
               </Link>
             </div>
             <div className="lg:col-span-5 relative min-h-[280px] lg:min-h-0 border-t lg:border-t-0 lg:border-l border-white/10">

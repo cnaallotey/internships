@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import FAQ from './pages/FAQ';
 import Waitlist from './pages/Waitlist';
+import Register from './pages/Register';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,8 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/waitlist" element={<Waitlist />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/apply" element={<Register />} />
             {/* Fallback routing */}
             <Route path="*" element={<Home />} />
           </Routes>

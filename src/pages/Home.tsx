@@ -50,7 +50,9 @@ export default function Home() {
               <a href="#stage-1">
                 <LuxuryButton>Explore the 3 Stages</LuxuryButton>
               </a>
-              <LuxuryButton variant="ghost">Join Live Q&A</LuxuryButton>
+              <Link to="/register">
+                <LuxuryButton variant="ghost">Reserve My Spot</LuxuryButton>
+              </Link>
             </div>
 
             <div className="flex flex-wrap gap-4">
@@ -296,7 +298,9 @@ export default function Home() {
                 <a href="https://internships.thriveafrica.co" target="_blank" rel="noopener noreferrer">
                   <LuxuryButton>Apply Now</LuxuryButton>
                 </a>
-                <LuxuryButton variant="ghost" className="text-white border-white/30 hover:bg-white/10">Join Live Q&A</LuxuryButton>
+                <Link to="/register">
+                  <LuxuryButton variant="ghost" className="text-white border-white/30 hover:bg-white/10">Reserve My Spot</LuxuryButton>
+                </Link>
               </div>
             </div>
             <div className="lg:col-span-2 relative min-h-[260px] lg:min-h-0 border-t lg:border-t-0 lg:border-l border-white/10">
