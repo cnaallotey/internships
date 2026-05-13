@@ -1323,6 +1323,11 @@ formdata-polyfill@^4.0.10:
   dependencies:
     fetch-blob "^3.1.2"
 
+forminit@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/forminit/-/forminit-0.2.4.tgz#b7ebb2de2b5e32044f01ef14ad166ec7aa79be57"
+  integrity sha512-p7GyP2dz4zIONMmETANUBK36KFr+Td8qwOX6Zn/+eeBvf023Zr5aRv2d46bsFlFRhwrhnpojizw9tHwhAvplYw==
+
 forwarded@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"

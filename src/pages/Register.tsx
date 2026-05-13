@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { Forminit } from 'forminit';
 import LuxuryButton from '../components/ui/LuxuryButton';
 
-const FORM_ENDPOINT = 'https://forminit.com/f/bwnynyga';
+const FORM_ID = 'bwnynyga';
+const forminit = new Forminit();
 
 const fieldClass =
   'w-full px-4 py-3.5 bg-white border border-border-beige text-sm focus:outline-none focus:border-near-black transition-colors placeholder:text-near-black/30';
@@ -24,21 +26,18 @@ export default function Register() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' }
-      });
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
-      form.reset();
-      setSubmitted(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } catch (err) {
-      setError('Something went wrong submitting your application. Please check your connection and try again.');
-    } finally {
+    const { error: submitError } = await forminit.submit(FORM_ID, formData);
+
+    if (submitError) {
+      setError(submitError.message || 'Something went wrong submitting your application. Please try again.');
       setSubmitting(false);
+      return;
     }
+
+    form.reset();
+    setSubmitted(true);
+    setSubmitting(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -97,9 +96,8 @@ export default function Register() {
               </div>
 
               <form onSubmit={handleSubmit} className="bg-white border border-border-beige p-6 md:p-10 lg:p-12">
-                {/* Honeypot — spam protection (hidden from users) */}
-                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
-                <input type="hidden" name="_source" value="internship-application" />
+                {/* Source tag (for filtering submissions in the Forminit dashboard) */}
+                <input type="hidden" name="fi-text-source" value="internship-application" />
 
                 {/* Personal Information */}
                 <div className="mb-10">
@@ -112,22 +110,22 @@ export default function Register() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="md:col-span-2">
                       <label className={labelClass} htmlFor="fullName">Full Name <span className="text-brand-pink">*</span></label>
-                      <input id="fullName" name="fullName" type="text" required placeholder="Your full name" className={fieldClass} />
+                      <input id="fullName" name="fi-sender-fullName" type="text" required placeholder="Your full name" className={fieldClass} />
                     </div>
 
                     <div className="md:col-span-2">
                       <label className={labelClass} htmlFor="email">Email Address <span className="text-brand-pink">*</span></label>
-                      <input id="email" name="email" type="email" required placeholder="you@example.com" className={fieldClass} />
+                      <input id="email" name="fi-sender-email" type="email" required placeholder="you@example.com" className={fieldClass} />
                     </div>
 
                     <div>
                       <label className={labelClass} htmlFor="phone">Phone Number <span className="text-brand-pink">*</span></label>
-                      <input id="phone" name="phone" type="tel" required placeholder="Enter your phone number" className={fieldClass} />
+                      <input id="phone" name="fi-text-phone" type="tel" required placeholder="Enter your phone number" className={fieldClass} />
                     </div>
 
                     <div>
                       <label className={labelClass} htmlFor="whatsapp">WhatsApp Number <span className="text-brand-pink">*</span></label>
-                      <input id="whatsapp" name="whatsapp" type="tel" required placeholder="Enter your WhatsApp number" className={fieldClass} />
+                      <input id="whatsapp" name="fi-text-whatsapp" type="tel" required placeholder="Enter your WhatsApp number" className={fieldClass} />
                     </div>
                   </div>
                 </div>
@@ -140,7 +138,7 @@ export default function Register() {
                   <div className="flex flex-col sm:flex-row gap-3 mt-2">
                     {['Yes', 'No'].map((opt) => (
                       <label key={opt} className="flex items-center gap-3 px-4 py-3 border border-border-beige cursor-pointer hover:bg-surface-gray/60 transition-colors flex-1">
-                        <input type="radio" name="stageOneEnrolled" value={opt} required className="accent-near-black" />
+                        <input type="radio" name="fi-radio-stage-one-enrolled" value={opt} required className="accent-near-black" />
                         <span className="text-sm font-medium">{opt}</span>
                       </label>
                     ))}
@@ -158,12 +156,12 @@ export default function Register() {
                   <div className="grid grid-cols-1 gap-5">
                     <div>
                       <label className={labelClass} htmlFor="course">Which course did you enroll in with us?</label>
-                      <input id="course" name="course" type="text" placeholder="e.g. CyberSecurity" className={fieldClass} />
+                      <input id="course" name="fi-text-course" type="text" placeholder="e.g. CyberSecurity" className={fieldClass} />
                     </div>
 
                     <div>
                       <label className={labelClass} htmlFor="cohort">Which cohort and year did you graduate?</label>
-                      <input id="cohort" name="cohort" type="text" placeholder="e.g. March Cohort, 2026" className={fieldClass} />
+                      <input id="cohort" name="fi-text-cohort" type="text" placeholder="e.g. March Cohort, 2026" className={fieldClass} />
                     </div>
                   </div>
                 </div>

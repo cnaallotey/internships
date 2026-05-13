@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
+import { Forminit } from 'forminit';
 import LuxuryButton from '../components/ui/LuxuryButton';
 
-const FORM_ENDPOINT = 'https://forminit.com/f/bwnynyga';
+const FORM_ID = 'bwnynyga';
+const forminit = new Forminit();
 
 const fieldClass =
   'w-full px-6 py-4 border border-border-beige focus:outline-none focus:border-near-black transition-colors';
@@ -22,20 +24,17 @@ export default function Waitlist() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' }
-      });
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
-      form.reset();
-      setSubmitted(true);
-    } catch (err) {
-      setError('Something went wrong. Please check your connection and try again.');
-    } finally {
+    const { error: submitError } = await forminit.submit(FORM_ID, formData);
+
+    if (submitError) {
+      setError(submitError.message || 'Something went wrong. Please try again.');
       setSubmitting(false);
+      return;
     }
+
+    form.reset();
+    setSubmitted(true);
+    setSubmitting(false);
   };
 
   return (
@@ -69,11 +68,10 @@ export default function Waitlist() {
               </p>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md mx-auto">
-                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
-                <input type="hidden" name="_source" value="waitlist" />
-                <input type="text" name="fullName" required placeholder="Full Name" className={fieldClass} />
-                <input type="email" name="email" required placeholder="Email Address" className={fieldClass} />
-                <input type="tel" name="phone" required placeholder="Telephone Number" className={fieldClass} />
+                <input type="hidden" name="fi-text-source" value="waitlist" />
+                <input type="text" name="fi-sender-fullName" required placeholder="Full Name" className={fieldClass} />
+                <input type="email" name="fi-sender-email" required placeholder="Email Address" className={fieldClass} />
+                <input type="tel" name="fi-text-phone" required placeholder="Telephone Number" className={fieldClass} />
                 {error && (
                   <div className="px-4 py-3 bg-soft-pink border border-brand-pink/40 text-sm text-near-black/80 text-left">
                     {error}
