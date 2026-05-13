@@ -87,7 +87,7 @@ export default function Home() {
               className="absolute -right-4 md:-right-8 top-20 bg-white p-4 rounded-xl shadow-xl flex items-center gap-4 z-20 border border-border-beige"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3].map(i => (
+                {[51, 7].map(i => (
                   <div key={i} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden">
                     <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" />
                   </div>
