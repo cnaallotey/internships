@@ -4,7 +4,10 @@
       "Bash(npx vite *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200\")",
       "Bash(curl -s -o /tmp/check1.jpg \"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400\")",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(ls -la vercel.json)",
+      "Bash(ls -la public/)",
+      "Bash(yarn add *)"
     ]
   }
 }
