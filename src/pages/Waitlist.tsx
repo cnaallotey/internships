@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 import LuxuryButton from '../components/ui/LuxuryButton';
 
-const FORM_ENDPOINT = 'https://getform.io/f/azyyxzxb';
+const FORM_ENDPOINT = 'https://forminit.com/f/bpjnlwrb';
 
 const fieldClass =
   'w-full px-6 py-4 border border-border-beige focus:outline-none focus:border-near-black transition-colors';
