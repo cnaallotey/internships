@@ -87,9 +87,13 @@ export default function Home() {
               className="absolute -right-4 md:-right-8 top-20 bg-white p-4 rounded-xl shadow-xl flex items-center gap-4 z-20 border border-border-beige"
             >
               <div className="flex -space-x-2">
-                {[51, 7].map(i => (
+                {[
+                  'https://images.unsplash.com/photo-1552493450-2b5ce80ed13f?w=120&h=120&fit=crop&crop=faces&auto=format&q=80',
+                  'https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=120&h=120&fit=crop&crop=faces&auto=format&q=80',
+                  'https://images.unsplash.com/photo-1668752741330-8adc5cef7485?w=120&h=120&fit=crop&crop=faces&auto=format&q=80'
+                ].map((src, i) => (
                   <div key={i} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden">
-                    <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" />
+                    <img src={src} alt="Community member" className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
